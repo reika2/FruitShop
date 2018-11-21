@@ -1,16 +1,13 @@
 #include "CandiedFruit.h"
-#include <iostream>
 
-
-CandiedFruit::CandiedFruit(IFruit fruit, Sugar sugar) : m_ifruit{ fruit }, m_sugar{ sugar }{}
+CandiedFruit::CandiedFruit(Fruit fruit, Sugar sugar) : m_fruit{ fruit }, m_sugar{ sugar }{}
 
 double CandiedFruit::cost() const
 {
-	return m_ifruit.cost() + m_sugar.cost();
+	return m_fruit.cost() + m_sugar.cost();
 }
 
-
-void CandiedFruit::getDescription() const 
+string CandiedFruit::getDescription() const 
 {
-	std::cout << "Candied Fruit" << '\n';
+	return "Candied " + m_fruit.getDescription();
 }

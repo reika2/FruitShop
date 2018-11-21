@@ -1,10 +1,7 @@
 #pragma once
 #include "IProduct.h"
-#include "IFruit.h"
+#include "Fruit.h"
 #include "Sugar.h"
-#include <string>
-using std::string;
-
 
 class CandiedFruit :
 	public IProduct
@@ -12,13 +9,13 @@ class CandiedFruit :
 public:
 	CandiedFruit() = default;
 	~CandiedFruit() = default;
-	CandiedFruit(IFruit fruit, Sugar sugar);
+	CandiedFruit(Fruit fruit, Sugar sugar);
 
 	double cost() const override;
-	void getDescription() const override;
+	string getDescription() const override;
 
 private:
-	IFruit m_ifruit;
+	Fruit m_fruit;
 	Sugar m_sugar;
 
 };

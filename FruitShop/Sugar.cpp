@@ -9,7 +9,7 @@ double Sugar::cost() const
 }
 
 
-void Sugar::getDescription() const
+string Sugar::getDescription() const
 {
-	std::cout << "Candied" << std::endl;
+	return "Sugar";
 }

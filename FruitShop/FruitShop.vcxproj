@@ -115,24 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Apple.cpp" />
     <ClCompile Include="CandiedFruit.cpp" />
-    <ClCompile Include="Chocolate.cpp" />
-    <ClCompile Include="ChocolateCoatedFruit.cpp" />
+    <ClCompile Include="Fruit.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Orange.cpp" />
-    <ClCompile Include="Product.cpp" />
     <ClCompile Include="Sugar.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Apple.h" />
     <ClInclude Include="CandiedFruit.h" />
-    <ClInclude Include="Chocolate.h" />
-    <ClInclude Include="ChocolateCoatedFruit.h" />
-    <ClInclude Include="IFruit.h" />
+    <ClInclude Include="Fruit.h" />
     <ClInclude Include="IProduct.h" />
-    <ClInclude Include="Orange.h" />
-    <ClInclude Include="Product.h" />
     <ClInclude Include="Sugar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
